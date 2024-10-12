@@ -3,7 +3,6 @@ project(q_03_library)
 
 add_library(q_03_library "question3.cpp" "question3.h")
 add_executable(q_03_exe "main.cpp" "question3.cpp")
-
-
+target_link_libraries(q_03_exe menu_tools)
 
 
