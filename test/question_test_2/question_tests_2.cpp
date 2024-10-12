@@ -10,3 +10,11 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("test get_factorial_sequence")
+{
+	REQUIRE(get_factorial_sequence(3).compare("1x2x3=6") == 0);
+	REQUIRE(get_factorial_sequence(4).compare("1x2x3x4=24") == 0);
+	REQUIRE(get_factorial_sequence(5).compare("1x2x3x4x5=120") == 0);
+	REQUIRE(get_factorial_sequence(6).compare("1x2x3x4x5x6=720") == 0);
+}
